@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="splashscreen">SplashScreen</string>
+    <string name="console">console</string>
+    <string name="plus">plus</string>
+    <string name="minus">minus</string>
+    <string name="modulos">modulos</string>
+    <string name="multiplication">multiplication</string>
+    <string name="equals">equals</string>
+    <string name="c">C</string>
+    <string name="results">Result</string>
+    <string name="enter_2nd_number">Enter 2nd number</string>
+    <string name="enter_1st_number">Enter 1st number</string>
+    <string name="divide">÷</string>
+    <string name="multiply">x</string>
+    <string name="moduloss">%</string>
+    <string name="minuss">-</string>
+    <string name="pluss">+</string>
+    <string name="equalss">=</string>
+    <string name="_55_00">55.00</string>
+</resources>

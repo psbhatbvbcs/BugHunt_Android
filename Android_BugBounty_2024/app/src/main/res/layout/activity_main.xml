@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#1E1E1E">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="24dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/cr"
+        android:gravity="center"
+        android:shadowColor="#AA00FF"
+        android:text="@string/results"
+        android:shadowRadius="100.0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:elevation="10dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/cr"
+        android:gravity="center"
+        android:shadowColor="#FFAB00"
+        android:shadowRadius="50.0"
+        android:text="@string/_55_00"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/equals"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/button"
+        android:contentDescription="@string/equals"
+        android:fontFamily="@font/titan_one"
+        android:text="@string/equalss"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="@+id/secondNum"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/secondNum"
+        app:layout_constraintTop_toBottomOf="@+id/secondNum" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ac"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/c"
+        android:textSize="30sp"
+        android:fontFamily="@font/titan_one"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        app:layout_constraintBottom_toTopOf="@+id/equals"
+        app:layout_constraintEnd_toEndOf="@+id/equals"
+        app:layout_constraintStart_toStartOf="@+id/equals" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/minus"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/button"
+        android:text="@string/minuss"
+        android:textSize="40sp"
+        android:fontFamily="@font/titan_one"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/modulo"
+        app:layout_constraintTop_toTopOf="@+id/equals"
+        android:contentDescription="@string/minus" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/multiplication"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/button"
+        android:text="@string/multiply"
+        android:textSize="30sp"
+        android:fontFamily="@font/titan_one"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/modulo"
+        app:layout_constraintTop_toTopOf="@+id/equals"
+        android:contentDescription="@string/multiplication" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/modulo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button"
+        android:text="@string/moduloss"
+        android:textSize="30sp"
+        android:fontFamily="@font/titan_one"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/equals"
+        app:layout_constraintStart_toStartOf="@+id/equals"
+        app:layout_constraintTop_toBottomOf="@+id/equals"
+        android:contentDescription="@string/modulos" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/plus"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/button"
+        android:text="@string/pluss"
+        android:textSize="40sp"
+        android:fontFamily="@font/titan_one"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/equals"
+        app:layout_constraintEnd_toStartOf="@+id/equals"
+        android:contentDescription="@string/plus" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/division"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/button"
+        android:text="@string/divide"
+        android:textSize="40sp"
+        android:fontFamily="@font/titan_one"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/equals"
+        app:layout_constraintStart_toEndOf="@+id/equals" />
+
+    <EditText
+        android:id="@+id/firstNum"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/edt"
+        android:fontFamily="@font/cr"
+        android:hint="@string/enter_1st_number"
+        android:inputType="numberDecimal"
+        android:padding="15dp"
+        android:shadowRadius="200.0"
+        android:textColor="@color/white"
+        android:textColorHint="#6BFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/secondNum"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edt"
+        android:fontFamily="@font/cr"
+        android:textColor="@color/white"
+        android:hint="@string/enter_2nd_number"
+        android:inputType="numberDecimal"
+        android:padding="15dp"
+        android:textColorHint="#6BFFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/firstNum"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/firstNum"
+        app:layout_constraintTop_toBottomOf="@+id/firstNum" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

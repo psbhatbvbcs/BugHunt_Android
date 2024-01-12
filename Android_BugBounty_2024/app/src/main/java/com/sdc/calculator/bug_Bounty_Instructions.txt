@@ -10,5 +10,8 @@ Issue: When using decimals as operands, the number of digits after the decimal p
 Hint: Utilize Kotlin functions for decimal formatting to ensure exactly 2 digits after the decimal point.
 
 #Splash Screen Persistence Bug:
+
+Find a helpful hint to "Relieve the application from running" in SplashActivity.kt
+
 Issue: After attempting to exit the app, the splash screen image reappears and stays indefinitely.
 Hint: Implement a mechanism to end or kill the splash screen after it has been displayed for 3 seconds in beginning.

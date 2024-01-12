@@ -3,28 +3,12 @@
 #Basic Bugs:
 
 #Decimal Digits Bug:
+
+Adding two decimal points? Haha, You can't. Add conditions to prevent this. Look around line 69 in MainActivity.kt
+
 Issue: When using decimals as operands, the number of digits after the decimal point ('n') is not exactly 2.
 Hint: Utilize Kotlin functions for decimal formatting to ensure exactly 2 digits after the decimal point.
 
 #Splash Screen Persistence Bug:
 Issue: After attempting to exit the app, the splash screen image reappears and stays indefinitely.
 Hint: Implement a mechanism to end or kill the splash screen after it has been displayed for 3 seconds in beginning.
-
-#Non-Digit Operand Crash:
-Issue: App crashes when one or both operands are not digits (e.g., dot ".").
-Hint 1: Use conditional statements to handle non-digit operands.
-Hint 2: Display a toast message for an invalid format.
-
-#Operator Buttons Bug:
-Issue: Some operator buttons are not working as intended.
-Hint 1: Implement the functionality using conditional or switch statements.
-Hint 2: Adapt syntax from C to Kotlin while ensuring the functionality remains the same.
-
-#Advanced Bugs:
-#Responsive Layout Bug:
-Issue: The layout is disoriented when switching from portrait to landscape modes(Rotation of Screen).
-Hint: Create separate layouts for portrait and landscape modes to ensure a responsive design.
-
-#Splash Screen as Activity Bug:
-Issue: Splash screen is created as an activity instead of using a splash API.
-Hint: Consult online resources and the documentation to implement a splash API for a more efficient splash screen.

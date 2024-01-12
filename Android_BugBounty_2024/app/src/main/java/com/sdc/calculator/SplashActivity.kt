@@ -29,6 +29,7 @@ class SplashActivity : AppCompatActivity() {
                          val i = Intent(this,MainActivity::class.java)
                         //switching Screens
                           startActivity(i)
+                        // Relieve this activity from running
                 },
                       //delaying or showing the splash scree for 3 seconds
                         3000)
